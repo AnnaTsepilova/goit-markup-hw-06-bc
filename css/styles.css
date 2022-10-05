@@ -262,7 +262,7 @@ body {
     text-align: center;
 }
 
-.hiden {
+.hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -503,11 +503,6 @@ body {
     border-color: var(--accent-color);
 }
 
-
-
-
-
-
 /* Footer */
 
 .bg-footer {
@@ -650,8 +645,6 @@ body {
     letter-spacing: 0.03em;
 }
 
-
-
 .subscribe-btn {
     position: relative;
     display: flex;
@@ -661,7 +654,6 @@ body {
     padding: 10px 32px;
     
     transition: background-color 250ms var(--cubic);
-
 }
 
 .subscribe-icon {
@@ -681,8 +673,6 @@ body {
     align-items: baseline;
     gap: 93px;
 }
-
-
 
 /* МОДАЛЬНЕ ВІКНО */
 
@@ -850,13 +840,12 @@ body {
     letter-spacing: 0.01em;
 }
 
-
 .modal-form textarea:focus {
     border: 1px solid var(--accent-color);
 }
 
 .field-checkbox {
-    position: relative;
+
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
@@ -866,13 +855,19 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 12px;
+    left: -15px;
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
     fill: transparent;
+
+    transition: border-color 250ms var(--cubic),
+    background-image 250ms var(--cubic),
+    background-repeat 250ms var(--cubic),
+    background-size 250ms var(--cubic),
+    background-origin 250ms var(--cubic);
 }
 
-.policy-checkbox:checked + .checkbox-icon {
+.policy-checkbox:checked + .form-policy .checkbox-icon {
     border-color: var(--accent-color);
     background-image: url(../images/icon-check.svg);
     background-repeat: no-repeat;
@@ -882,11 +877,9 @@ body {
 
 .form-policy {
 
-    display: inline-block;
-
     position: relative;
+    display: flex;
     align-items: baseline;
-
     padding: 0;
 
     line-height: 1.71;
@@ -898,6 +891,10 @@ body {
 
 .policy-link {
     color: var(--accent-color);
+}
+
+.checkbox-text {
+    margin-left: 8px;
 }
 
 .modal-btn {
