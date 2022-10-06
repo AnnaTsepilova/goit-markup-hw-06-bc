@@ -777,10 +777,12 @@ body {
     padding-bottom: 4px;
     margin: 0;
 
-    font-size: 100%;
-    line-height: 1.16;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.01em;
-
+    color: var(--primary-text-color);
 }
 
 .field {
@@ -800,6 +802,10 @@ body {
 
     transition: border 250ms var(--cubic);
 
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     color: var(--textarea-text-color);
 }
 
@@ -812,9 +818,6 @@ body {
 
     transition: border 250ms var(--cubic),
     fill 250ms var(--cubic);
-
-    
-
 }
 
 .field-input:focus {
@@ -834,7 +837,8 @@ body {
     border: 1px solid var(--input-border-color);
     border-radius: 4px;
 
-    font-size: 100%;
+    font-family: 'Roboto';
+    font-size: 14px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--primary-text-color);
