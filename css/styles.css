@@ -639,12 +639,12 @@ body {
     border: 1px solid var(--accent-color);
 }
 
-.subscribe-form input::placeholder {
+/* .subscribe-form input::placeholder {
     color: var(--contacts-footer-color);
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-}
+} */
 
 .subscribe-btn {
     position: relative;
@@ -850,12 +850,12 @@ body {
 
 }
 
-.modal-form textarea::placeholder {
+/* .modal-form textarea::placeholder {
     color: var(--textarea-color);
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-}
+} */
 
 .modal-form textarea:focus {
     border: 1px solid var(--accent-color);
